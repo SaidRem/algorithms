@@ -1,3 +1,16 @@
+
+
+
+
+
+def find_lowest_cost_node(costs):
+    pass
+
+
+
+
+
+
 node = find_lowest_cost_node(costs)
 while node is not None:
     cost = costs[node]
