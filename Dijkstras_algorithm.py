@@ -1,15 +1,18 @@
 
 
-
-
+graph = {}; costs = {}; parents = {}
+processed = []
 
 def find_lowest_cost_node(costs):
-    pass
-
-
-
-
-
+    lowest_cost = foat('inf')
+    lowest_cost_node = None
+    for node in costs:
+        cost = costs[node]
+        if cost < lowest_cost and node not in processed:
+            lowest_cost = cost
+            lowest_cost_node = node
+    return lowest_cost_node 
+    
 
 node = find_lowest_cost_node(costs)
 while node is not None:
