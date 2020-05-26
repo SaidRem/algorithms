@@ -20,8 +20,8 @@
 # 16.     else A[k] = R[j]
 # 17.             j = j + 1
 # 
-######
-# The main prog
+##############
+# 
 # Merge-Sort(A, p, r)
 # 1. if p < r
 # 2.      q = (p + r) / 2
