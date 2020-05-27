@@ -28,3 +28,5 @@
 # 3.      Merge-Sort(A, p, q)
 # 4.      Merge-Sort(A, q + 1, r)
 # 5.      Merge(A, p, q, r)
+####################################
+# PYTHON CODE:
