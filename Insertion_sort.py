@@ -11,5 +11,5 @@ def insertion_sort(arr):
 
 
 if __name__ == '__main__':
-    arr = map(int, input().split())
+    arr = map(int, input('enter integers separated by spaces').split())
     print(f'{arr} => {insertion_sort(arr)}')
