@@ -1,4 +1,4 @@
-
+# Dijkstra's algorithm works only on not negative edged graph
 
 graph = {}; costs = {}; parents = {}
 processed = []
