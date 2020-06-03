@@ -7,8 +7,7 @@ def random_walk(n):
     x = 0
     y = 0
     for _ in range(n):
-        direct = ['N', 'S', 'W', 'E']
-        choice_r = random.choice(direct)
+        choice_r = random.choice(['N', 'S', 'W', 'E'])
         if choice_r == 'N':
             y += 1
         elif choice_r == 'S':
