@@ -30,3 +30,9 @@
 # 5.      Merge(A, p, q, r)
 ####################################
 # PYTHON CODE:
+
+def Merge(arr):
+  pass
+
+def Merge-Sort(arr):
+  pass
