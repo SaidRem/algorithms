@@ -4,18 +4,11 @@ import random
 
 def random_walk(n):
     """ Returns coordinates after n block of random walk """
-    x = 0
-    y = 0
+    x, y = 0, 0
     for _ in range(n):
-        choice_r = random.choice(['N', 'S', 'W', 'E'])
-        if choice_r == 'N':
-            y += 1
-        elif choice_r == 'S':
-            y -= 1
-        elif choice_r == 'W':
-            x -= 1
-        else:
-            x += 1
+        dx, dy = random.choice([(0, 1), (0, -1), (-1, 0), (1, 0)])
+        x += dx
+        y += dy
     return x, y
 
 
