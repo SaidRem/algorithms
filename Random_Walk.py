@@ -1,9 +1,14 @@
 # Random walk
+"""
+What is the longest random walk you can take
+so that on average you will end up 4 blocks
+or fewer from home?
+"""
 import random
 
 
 def random_walk(n):
-    """ Returns coordinates after n block of random walk """
+    """ Returns coordinates after n block random walk. """
     x, y = 0, 0
     for _ in range(n):
         dx, dy = random.choice([(0, 1), (0, -1), (-1, 0), (1, 0)])
@@ -13,4 +18,14 @@ def random_walk(n):
 
 
 if __name__ == '__main__':
-    print(random_walk(19))
+    number_of_walks = 20_000
+    for walk_length in range(1, 31):
+        no_transport = 0        # Number of walks 4 or fewer blocks from home
+        for i in range(number_of_walks):
+            (x, y) = random_walk(walk_length)
+            distance = abs(x) + abs(y)
+            if distance <= 4:
+                no_transport += 1
+        no_transport_percentage = float(no_transport) / number_of_walks
+        print(f'Walk size = {walk_length} // %'
+              f'of no transport = {100*no_transport_percentage}')
