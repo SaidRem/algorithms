@@ -1,3 +1,7 @@
+# Worst-case performance O(n^2) comparisons, O(n^2) swaps
+# Best-case performance O(n) comparisons, O(1) swaps
+# Average performance	O(n^2) comparisons, O(n^2) swaps
+
 
 def bubble_sort(arr):
     swaps = 0
