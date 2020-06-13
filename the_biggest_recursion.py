@@ -1,4 +1,4 @@
-# the biggest with recursion
+# The biggest with recursion
 
 
 def the_biggest(arr):
