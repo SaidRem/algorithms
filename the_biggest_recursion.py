@@ -1,4 +1,4 @@
-# The biggest with recursion
+# Finds the biggest element using recursion
 
 
 def the_biggest(arr):
