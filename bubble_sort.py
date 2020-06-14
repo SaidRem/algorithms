@@ -5,12 +5,13 @@
 
 def bubble_sort(arr):
     swaps = 0
-    for _ in range(len(arr)):
-        for i in range(len(arr) - 1):
+    for bypass in range(len(arr)-1):
+        for i in range(len(arr)-1-bypass):
             if arr[i] > arr[i + 1]:
-                arr.insert(i + 1, arr.pop(i))
+                arr[i], arr[i+1] = arr[i+1], arr[i]
                 swaps += 1
     return arr, swaps
+
 
 
 if __name__ == '__main__':
