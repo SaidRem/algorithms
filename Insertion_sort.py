@@ -5,7 +5,7 @@ def insertion_sort(arr):
         key = arr[i]
         j = i - 1
         while j >= 0 and arr[j] > key:
-            arr.insert(j + 1, arr.pop(j))
+            arr[j+1], arr[j] = arr[j], arr[j+1]    # arr.insert(j + 1, arr.pop(j))
             j = j - 1
     return arr
 
