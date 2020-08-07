@@ -1,3 +1,7 @@
+# Merge sort algorithm:
+# 1. Divide the unsorted list into sublists, each containing one element (a list of one element is considered sorted).
+# 2. Repeatedly merge sorted sublist to produce new sorted sublists until there is only one sublist remaining - this will be the sorted list.
+
 # Pseudocode of merge sort algorithm:
 # 
 # Merge(A, p, q, r)
