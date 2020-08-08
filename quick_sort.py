@@ -1,3 +1,5 @@
+# Quicksort is an efficient sorting algorithm. It is an divide and conquer algorithm.
+# Average performance: O(n log n). Worst case: O(n^2).
 import random
 
 
