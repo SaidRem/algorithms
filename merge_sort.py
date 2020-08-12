@@ -35,8 +35,45 @@
 ####################################
 # PYTHON CODE:
 
-def Merge(arr):
-  pass
+def merge(arr_left, arr_right):
+    sorted_arr = []
+    arr_left_index = arr_right_index = 0
+    arr_left_len, arr_right_len = len(arr_left), len(arr_right)
+    for _ in range(arr_left_len + arr_right_len):
+        if arr_left_index < arr_left_len and arr_right_index < arr_right_len:
+            if arr_left[arr_left_index] <= arr_right[arr_right_index]:
+                sorted_arr.append(arr_left[arr_left_index])
+                arr_left_index += 1
+            else:
+                sorted_arr.append(arr_right[arr_right_index])
+                arr_right_index += 1
+        elif arr_left_index == arr_left_len:
+            sorted_arr.append(arr_right[arr_right_index])
+            arr_right_index += 1
+        elif arr_right_index == arr_right_len:
+            sorted_arr.append(arr_left[arr_left_index])
+            arr_left_index += 1
+    return sorted_arr
 
-def Merge-Sort(arr):
-  pass
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    arr_left = merge_sort(arr[:mid])
+    arr_right = merge_sort(arr[mid:])
+    return merge(arr_left, arr_right)
+
+
+def test():
+    random = [43, 22, 95, 33, 999, 2]
+    random_sorted = merge_sort(random)
+    if random_sorted == [2, 22, 33, 43, 95, 999]:
+        print('All right')
+        print(f'random = {random}\nrandom_sorted = {random_sorted}')
+    else:
+        print('Wrong')
+
+
+if __name__ == '__main__':
+    test()
