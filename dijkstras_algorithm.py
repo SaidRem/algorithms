@@ -1,4 +1,5 @@
-# Dijkstra's algorithm works only on not negative edged graph
+# Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in graph.
+# Works only on not negative edged graph
 
 graph = {}; costs = {}; parents = {}
 processed = []
