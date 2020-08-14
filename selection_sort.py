@@ -1,3 +1,5 @@
+# Selection sort is an in-place comparison sorting algorithm.
+# The average speed: O(n^2)
 def find_smallest(arr):
     smallest = arr[0]
     s_index = 0
