@@ -17,6 +17,6 @@ def selection_sort(arr):
 
 
 if __name__ == '__main__':
-    arr = list(map(int, input('enter integers separated by spaces: '
-                              ).strip().split()))
+    arr = list(map(int, input('enter integers separated by'
+                              'spaces: ').strip().split()))
     print(f'Sorted list: {selection_sort(arr)}')
