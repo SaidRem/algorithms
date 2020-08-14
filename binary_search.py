@@ -2,6 +2,9 @@
 # binary chop is a search algorithm that finds the position of a target
 # value within a sorted array.
 # Binary search runs in logarithmic time in the worst case: O(log n).
+# Binary search is faster than linear search except for small arrays.
+
+# The array must be sorted first to apply binary search.
 
 def binary_search(arr, target):
     high = len(arr) - 1
