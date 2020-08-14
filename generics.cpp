@@ -1,8 +1,9 @@
 /**
  * Generic function named printArray. This function takes an vector
  * of generic elements as a parameter.
+ * Output format:
  * printArray function prints each element of its generic vector parameter
- * on a new line
+ * on a new line.
 **/
 #include <iostream>
 #include <vector>
