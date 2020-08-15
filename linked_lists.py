@@ -1,3 +1,6 @@
+# A linked list is a linear collection of data elements whose order is not
+# given by their physical placement in memory. Instead each element points
+# to the next.
 # A Node insert function has two parameters: a pointer, head,
 # pointing to the first node of a linked list, and an integer
 # def value that must be added to the end of the list as a new Node object
