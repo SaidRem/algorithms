@@ -1,4 +1,5 @@
-
+# Insertion sort is a simple sorting algorithm that builds
+# the final sorted array one item at a time.
 
 def insertion_sort(arr):
     for i in range(1, len(arr)):
