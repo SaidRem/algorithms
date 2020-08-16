@@ -1,4 +1,6 @@
-# Random walk
+# Random walk is a mathematical object, known as a stochastic or random process,
+# that describes a path that consists of a succession of random steps on some
+# mathematical steps such as the integers.
 """
 What is the longest random walk you can take
 so that on average you will end up 4 blocks
