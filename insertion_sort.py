@@ -1,5 +1,7 @@
 # Insertion sort is a simple sorting algorithm that builds
 # the final sorted array one item at a time.
+# Worst-case and average performance is O(n^2).
+# The best-case performance is O(n)
 
 def insertion_sort(arr):
     for i in range(1, len(arr)):
