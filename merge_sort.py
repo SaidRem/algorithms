@@ -38,18 +38,33 @@
 def merge(arr_left, arr_right):
     sorted_arr = []
     arr_left_index = arr_right_index = 0
+    
+    # Lenght often need to use, so lenght variable will be handy.
     arr_left_len, arr_right_len = len(arr_left), len(arr_right)
     for _ in range(arr_left_len + arr_right_len):
         if arr_left_index < arr_left_len and arr_right_index < arr_right_len:
+            
+            # Check which value from the start is smaller.
+            # If the item at the beginning of the left list is smaller, add it
+            # to the sorted list.
             if arr_left[arr_left_index] <= arr_right[arr_right_index]:
                 sorted_arr.append(arr_left[arr_left_index])
                 arr_left_index += 1
+                
+            # If the item at the beginning of the right list is smaller, add it
+            # to the sorted list.
             else:
                 sorted_arr.append(arr_right[arr_right_index])
                 arr_right_index += 1
+                
+        # If reached the end of the left list, then add elements from 
+        # right list to the sorted list.
         elif arr_left_index == arr_left_len:
             sorted_arr.append(arr_right[arr_right_index])
             arr_right_index += 1
+        
+        # if reached the end of the right list, then add elements from 
+        # left list to the sorted list.
         elif arr_right_index == arr_right_len:
             sorted_arr.append(arr_left[arr_left_index])
             arr_left_index += 1
