@@ -34,6 +34,7 @@
 # 5.      Merge(A, p, q, r)
 ####################################
 # PYTHON CODE:
+import random
 
 def merge(arr_left, arr_right):
     sorted_arr = []
@@ -84,16 +85,17 @@ def merge_sort(arr):
     return merge(arr_left, arr_right)
 
 
-def test():
-    random = [43, 22, 95, 33, 999, 2]
-    random_sorted = merge_sort(random)
-    if random_sorted == [2, 22, 33, 43, 95, 999]:
+def test(test_arr):
+    temp = test_arr[:]
+    random.shuffle(temp)
+    random_sorted = merge_sort(temp)
+    if random_sorted == test_arr:
         return 'All right'
-
     else:
         return 'Wrong'
 
 
 if __name__ == '__main__':
+    test_arr = list(range(100))
     for i in range(10):
-        print(f'test №{i} is {test()}')
+        print(f'test №{i} is {test(test_arr)}')
