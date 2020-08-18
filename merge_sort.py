@@ -75,8 +75,12 @@ def merge_sort(arr):
     if len(arr) <= 1:
         return arr
     mid = len(arr) // 2
+    
+    # Sort and merge each half.
     arr_left = merge_sort(arr[:mid])
     arr_right = merge_sort(arr[mid:])
+    
+    # Merge the sorted lists into new one.
     return merge(arr_left, arr_right)
 
 
@@ -84,11 +88,12 @@ def test():
     random = [43, 22, 95, 33, 999, 2]
     random_sorted = merge_sort(random)
     if random_sorted == [2, 22, 33, 43, 95, 999]:
-        print('All right')
-        print(f'random = {random}\nrandom_sorted = {random_sorted}')
+        return 'All right'
+
     else:
-        print('Wrong')
+        return 'Wrong'
 
 
 if __name__ == '__main__':
-    test()
+    for i in range(10):
+        print(f'test №{i} is {test()}')
