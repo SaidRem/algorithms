@@ -7,9 +7,9 @@ def quick_sort(arr):
     if len(arr) < 2:
         return arr
     else:
-        r = random.randint(0, len(arr) - 1)     # random int for select pivot element in random way
-        pivot = arr.pop(r)                      # random selection of pivot element makes average time = n*log(n)
-        less = [x for x in arr if x <= pivot]
+        r = random.randint(0, len(arr) - 1)     # Random int for select pivot element in random way.
+        pivot = arr.pop(r)                      # Random selection of pivot element makes average 
+        less = [x for x in arr if x <= pivot]   # time of the algorithm close to n*log(n).
         greater = [x for x in arr if x > pivot]
     return quick_sort(less) + [pivot] + quick_sort(greater)
 
