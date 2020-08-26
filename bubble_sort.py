@@ -1,3 +1,7 @@
+# Bubble sort is a simple sorting algorithm that iterates
+# over a list, comparing elements in pairs and swapping them
+# up until the larger elements "bubble up" to the end of the
+# list, and the smaller elements stay at the "bottom".
 # Worst-case performance O(n^2) comparisons, O(n^2) swaps
 # Best-case performance O(n) comparisons, O(1) swaps
 # Average performance	O(n^2) comparisons, O(n^2) swaps
