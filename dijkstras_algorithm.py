@@ -4,7 +4,7 @@
 graph = {}
 costs = {}
 parents = {}
-processed = []
+processed = []    # For processed nodes
 
 def find_lowest_cost_node(costs):
     lowest_cost = foat('inf')
