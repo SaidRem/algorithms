@@ -3,3 +3,4 @@ In mathematics and computer science, an algorithm is a finite sequence of well d
 a computation.
 Algorithms are always unambiguous and are used as specifications for performing calculations, data processing, automated reasoning, and other tasks.
 Algorithms are essential to the way computers process data.
+Algorithms can be expressed in many kinds of notation, including natural languages, pseudocode, flowcharts, programming languages.
