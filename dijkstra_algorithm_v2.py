@@ -1,4 +1,7 @@
 # Dijksta's algorithm is an algorithm for finding the sortest paths between nodes in a graph.
+# The algorithm exists in many variants.
+
+
 class Node:
 
     def __init__(self, data, indexloc=None):
